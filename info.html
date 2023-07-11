@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="info.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script>
+    $(document).ready(function(){
+        $(".affiche").click(function(){
+            $(".main").fadeOut(1000);
+            $(".ekip").fadeIn(3000);
+        } )
+    })
+</script>
+<body>
+    <header>
+        <div class="navbar">
+            <div id="gauche">
+                <nav>
+                    <ul>
+
+                        <li>
+                            <a href="about.html" id="nav">A PROPOS</a>
+                        </li>
+
+                        <li>
+                            <a href="can.html" id="nav">CAN 2024</a>
+                        </li>
+
+                        <li>
+                            <a href="menu.html" id="nav">MENU </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="midle">
+                <a href="accueil.html"><img src="IMG/Plan_de_travail_15x.png" alt="" srcset="" height="140"></a>
+            </div>
+            <div id="droite">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="billet.html" id="nav">billeterie</a>
+                        </li>
+                        <li>
+                            <a href="info.html" id="nav">infos</a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html" id="nav">Contact</a>
+                        </li>
+                        <li>
+                            <img src="Icon/recherche noir.png" alt="" srcset="" height="50">
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="trait" style="background-color: rgb(223, 219, 215);width: 96%;margin-left: 1%;"></div>
+    </header>
+    <div class="secret">
+
+        <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close">×</a>
+            <ul>
+                <li><a href="about.html">A propos</a></li>
+                <li><a href="can.html">Can 2024</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="billet.html">Billeterie</a></li>
+                <li><a href="" id="active">infos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <a href="#" id="openBtn">
+            <span class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </a>
+
+        <script>
+            var sidenav = document.getElementById("mySidenav");
+            var openBtn = document.getElementById("openBtn");
+            var closeBtn = document.getElementById("closeBtn");
+
+            openBtn.onclick = openNav;
+            closeBtn.onclick = closeNav;
+
+            /* Set the width of the side navigation to 250px */
+            function openNav() {
+                sidenav.classList.add("active");
+            }
+
+            /* Set the width of the side navigation to 0 */
+            function closeNav() {
+                sidenav.classList.remove("active");
+            }
+
+        </script>
+         <div>
+            <a href="accueil.html"><img src="IMG/Plan_de_travail_15x.png" alt="" height="100"></a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="actu">
+            <h1 data-aos="zoom-in" data-aos-duration="1000"> ACTUALITE </h1>
+            <div class="list">
+    
+                <div data-aos="zoom-in" data-aos-duration="1000">
+                    <img src="IMG/Pain 2.jpg" alt="" srcset="" height="300" width="400"> <br>
+                    <h3 style="font-family: Causten;">Menu</h3>
+                    <h2 style="font-family: Causten;">
+                        Découvrez notre
+                        menu spécial CAN
+                    </h2>
+                </div>
+                <div data-aos="zoom-in" data-aos-duration="1000">
+                    <img src="IMG/Football.jpg" alt="" srcset="" height="300" width="400"> <br>
+                    <h3 style="font-family: Causten;">Football</h3>
+                    <h2 style="font-family: Causten;">
+                        La défaite du pays
+                        hôte
+                    </h2>
+                </div>
+                <div data-aos="zoom-in" data-aos-duration="1000">
+                    <img src="IMG/Equipe.jpg" alt="" srcset="" height="300" width="450"> <br>
+                    <h3 style="font-family: Causten;">Can 2024</h3>
+                    <h2 style="font-family: Causten;">
+                        Les équipes qualifiés
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="achète"> <br>
+            <h1> Groupes et resultats <br>
+                des matchs de qualifications </h1>
+           <input type="button" value="Plus d'informations" class="affiche"> <br> <br>
+        </div>
+        <div class="galerie">
+            <h1 class="temps" data-aos="zoom-in" data-aos-duration="1000">
+                temps forts
+            </h1>
+            <div class="vid" data-aos="zoom-in" data-aos-duration="1000">
+                <img src="Icon/Icon 8.png" alt="" srcset="" style="margin-left: 34%;margin-top: 10%;">
+            </div>
+            <h1 class="best" data-aos="zoom-in" data-aos-duration="1000"> Le meilleur de la can 2024 </h1>
+            <div class="img">
+                <div class="up" data-aos="fade-right" data-aos-duration="1500">
+                    <img src="IMG/victory.png" alt="" srcset="" height="400" width="530"  >
+                    <img src="IMG/bg.png" alt="" srcset="" height="400" width="530" >
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="ekip">
+        <h1> groupe de qualification </h1>
+        <div class="square">
+            <div id="carre">
+                <div class="letter">
+                    Groupe A
+                </div>
+                <div class="country">
+                    Nigéria <br>
+                    Sierra Leone <br>
+                    Guinée-Bissau <br> 
+                    Sao Tomé-et-principe
+                </div>
+            </div>
+            <div id="carre">
+                <div class="letter">
+                    Groupe B
+                </div>
+                <div class="country">
+                    Burkina Faso <br>
+                    Cap-Vert <br>
+                    Togo <br> 
+                    Eswatini
+                </div>
+            </div>
+            <div id="carre">
+                <div class="letter">
+                    Groupe C
+                </div>
+                <div class="country">
+                    Cameroun <br>
+                    Namibie<br>
+                    Burundi 
+                    
+                </div>
+            </div>
+            <div id="carre">
+                <div class="letter">
+                    Groupe D
+                </div>
+                <div class="country">
+                    Egypte <br>
+                    Guinée <br>
+                    Malawi <br> 
+                    Ethiopie
+                </div>
+            </div>
+        </div>
+        <div class="square">
+            <div id="carre">
+                <div class="letter">
+                    Groupe E
+                </div>
+                <div class="country">
+                    Ghana <br>
+                    Madagascar <br>
+                    Angola <br> 
+                    Centreafrique
+                </div>
+            </div>
+            <div id="carre">
+                <div class="letter">
+                    Groupe F
+                </div>
+                <div class="country">
+                    Algérie <br>
+                    Ouganda <br>
+                    Niger <br> 
+                    Tanzanie
+                </div>
+            </div>
+            <div id="carre">
+                <div class="letter">
+                    Groupe G
+                </div>
+                <div class="country">
+                    Mali<br>
+                    Congo<br>
+                   Gambie <br>
+                   Soudan du Sud
+                    
+                </div>
+            </div>
+            <div id="carre">
+                <div class="letter">
+                    Groupe H
+                </div>
+                <div class="country">
+                    Côte d'Ivoire <br>
+                    Zambie <br>
+                    Comores <br> 
+                    Lesotho
+                </div>
+            </div>
+        </div>
+        <div class="square">
+            <div id="carre">
+                <div class="letter">
+                    Groupe I
+                </div>
+                <div class="country">
+                    RD Congo<br>
+                    Gabon <br>
+                    Mauritanie <br> 
+                    Soudan
+                </div>
+            </div>
+            <div id="carre">
+                <div class="letter">
+                    Groupe J
+                </div>
+                <div class="country">
+                    Tunisie <br>
+                    Guinée Equatoriale <br>
+                    Libye <br> 
+                    Bostwana
+                </div>
+            </div>
+            <div id="carre">
+                <div class="letter">
+                    Groupe K
+                </div>
+                <div class="country">
+                    Maroc<br>
+                    Afrique du Sud<br>
+                   Liberia <br>
+                   
+                    
+                </div>
+            </div>
+            <div id="carre">
+                <div class="letter">
+                    Groupe L
+                </div>
+                <div class="country">
+                    Sénégal <br>
+                    Bénin <br>
+                    Mozambique <br> 
+                   Rwanda
+                </div>
+            </div>
+        </div>
+        <h1> Classement par groupes </h1>
+        <div class="class">
+            <div class="boule">
+                <div class="left">
+                    <div style="color: rgb(239, 120, 21);">
+                        Equipe GA
+                    </div>
+                    <div>
+                       <br> Nigeria <br>
+                    
+                        Guinée-Bissau
+                    </div>
+                </div>
+                <div class="milieu">
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            J
+                        </div>
+                        <div>
+                         <br>   5 <br>5
+                        </div>
+                    </div>
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            V
+                        </div>
+                        <div>
+                          <br>  4 <br>3
+                        </div>
+                    </div>
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            N
+                        </div>
+                        <div>
+                          <br>  0 <br>1
+                        </div>
+                    </div>
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            D
+                        </div>
+                        <div>
+                          <br>  1 <br>1
+                        </div>
+                    </div>
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            +/-
+                        </div>
+                        <div>
+                          <br>  12<br>5 
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div style="color: rgb(66, 171, 56);">
+                        Points
+                    </div>
+                    <div style="color:rgb(66, 171, 56); ;">
+                       <br> 12 <br>
+                    
+                        10
+                    </div>
+                </div>
+            </div>
+            <div class="boule">
+                <div class="left">
+                    <div style="color: rgb(239, 120, 21);">
+                        Equipe GB
+                    </div>
+                    <div>
+                       <br> Burkina Faso <br>
+                    
+                        Cap-Vert
+                    </div>
+                </div>
+                <div class="milieu">
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            J
+                        </div>
+                        <div>
+                         <br>   5 <br>5
+                        </div>
+                    </div>
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            V
+                        </div>
+                        <div>
+                          <br>  3 <br>3
+                        </div>
+                    </div>
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            N
+                        </div>
+                        <div>
+                          <br>  1 <br>1
+                        </div>
+                    </div>
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            D
+                        </div>
+                        <div>
+                          <br>  1 <br>1
+                        </div>
+                    </div>
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            +/-
+                        </div>
+                        <div>
+                          <br>  3<br>3 
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div style="color: rgb(66, 171, 56);">
+                        Points
+                    </div>
+                    <div style="color:rgb(66, 171, 56); ;">
+                       <br> 10 <br>
+                    
+                        10
+                    </div>
+                </div>
+            </div>
+            <div class="boule">
+                <div class="left">
+                    <div style="color: rgb(239, 120, 21);">
+                        Equipe GC
+                    </div>
+                    <div>
+                       <br> Namibie <br>
+                    
+                        Cameroun
+                    </div>
+                </div>
+                <div class="milieu">
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            J
+                        </div>
+                        <div>
+                         <br>   4 <br>3
+                        </div>
+                    </div>
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            V
+                        </div>
+                        <div>
+                          <br>  1 <br>1
+                        </div>
+                    </div>
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            N
+                        </div>
+                        <div>
+                          <br>  2 <br>1
+                        </div>
+                    </div>
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            D
+                        </div>
+                        <div>
+                          <br>  1 <br>1
+                        </div>
+                    </div>
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            +/-
+                        </div>
+                        <div>
+                          <br>  0<br>0
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div style="color: rgb(66, 171, 56);">
+                        Points
+                    </div>
+                    <div style="color:rgb(66, 171, 56); ;">
+                       <br> 5 <br>
+                    
+                        4
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="class">
+            <div class="boule">
+                <div class="left">
+                    <div style="color: rgb(239, 120, 21);">
+                        Equipe GD
+                    </div>
+                    <div>
+                       <br> Egypte <br>
+                    
+                        Guinée
+                    </div>
+                </div>
+                <div class="milieu">
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            J
+                        </div>
+                        <div>
+                         <br>   5 <br>5
+                        </div>
+                    </div>
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            V
+                        </div>
+                        <div>
+                          <br>  4 <br>3
+                        </div>
+                    </div>
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            N
+                        </div>
+                        <div>
+                          <br>  0 <br>1
+                        </div>
+                    </div>
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            D
+                        </div>
+                        <div>
+                          <br>  1 <br>2
+                        </div>
+                    </div>
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            +/-
+                        </div>
+                        <div>
+                          <br>  6<br>2
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div style="color: rgb(66, 171, 56);">
+                        Points
+                    </div>
+                    <div style="color:rgb(66, 171, 56); ;">
+                       <br> 12 <br>
+                    
+                        9
+                    </div>
+                </div>
+            </div>
+            <div class="boule">
+                <div class="left">
+                    <div style="color: rgb(239, 120, 21);">
+                        Equipe GE
+                    </div>
+                    <div>
+                       <br> Ghana <br>
+                    
+                        Angola
+                    </div>
+                </div>
+                <div class="milieu">
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            J
+                        </div>
+                        <div>
+                         <br>   5 <br>5
+                        </div>
+                    </div>
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            V
+                        </div>
+                        <div>
+                          <br>  2 <br>2
+                        </div>
+                    </div>
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            N
+                        </div>
+                        <div>
+                          <br>  3 <br>2
+                        </div>
+                    </div>
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            D
+                        </div>
+                        <div>
+                          <br>  0 <br>1
+                        </div>
+                    </div>
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            +/-
+                        </div>
+                        <div>
+                          <br>  4<br>1
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div style="color: rgb(66, 171, 56);">
+                        Points
+                    </div>
+                    <div style="color:rgb(66, 171, 56); ;">
+                       <br> 9 <br>
+                    
+                        8
+                    </div>
+                </div>
+            </div>
+            <div class="boule">
+                <div class="left">
+                    <div style="color: rgb(239, 120, 21);">
+                        Equipe GF
+                    </div>
+                    <div>
+                       <br> Algérie <br>
+                    
+                        Tanzanie
+                    </div>
+                </div>
+                <div class="milieu">
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            J
+                        </div>
+                        <div>
+                         <br>   5<br>5
+                        </div>
+                    </div>
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            V
+                        </div>
+                        <div>
+                          <br>  5 <br>2
+                        </div>
+                    </div>
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            N
+                        </div>
+                        <div>
+                          <br>  0 <br>1
+                        </div>
+                    </div>
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            D
+                        </div>
+                        <div>
+                          <br>  0 <br>2
+                        </div>
+                    </div>
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            +/-
+                        </div>
+                        <div>
+                          <br>  7<br>-1
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div style="color: rgb(66, 171, 56);">
+                        Points
+                    </div>
+                    <div style="color:rgb(66, 171, 56); ;">
+                       <br> 15 <br>
+                    
+                        7
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="class">
+            
+            <div class="boule">
+                <div class="left">
+                    <div style="color: rgb(239, 120, 21);">
+                        Equipe GG
+                    </div>
+                    <div>
+                       <br> Mali <br>
+                    
+                        Gambie
+                    </div>
+                </div>
+                <div class="milieu">
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            J
+                        </div>
+                        <div>
+                         <br>   5 <br>5
+                        </div>
+                    </div>
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            V
+                        </div>
+                        <div>
+                          <br>  4 <br>3
+                        </div>
+                    </div>
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            N
+                        </div>
+                        <div>
+                          <br>  0 <br>0
+                        </div>
+                    </div>
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            D
+                        </div>
+                        <div>
+                          <br>  1 <br>2
+                        </div>
+                    </div>
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            +/-
+                        </div>
+                        <div>
+                          <br>  9<br>0
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div style="color: rgb(66, 171, 56);">
+                        Points
+                    </div>
+                    <div style="color:rgb(66, 171, 56); ;">
+                       <br> 12 <br>
+                    
+                        9
+                    </div>
+                </div>
+            </div>
+            <div class="boule">
+                <div class="left">
+                    <div style="color: rgb(239, 120, 21);">
+                        Equipe GH
+                    </div>
+                    <div>
+                       <br> Zambie <br>
+                    
+                        Côte d'Ivoire
+                    </div>
+                </div>
+                <div class="milieu">
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            J
+                        </div>
+                        <div>
+                         <br>   5<br>5
+                        </div>
+                    </div>
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            V
+                        </div>
+                        <div>
+                          <br>  4 <br>3
+                        </div>
+                    </div>
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            N
+                        </div>
+                        <div>
+                          <br>  0 <br>1
+                        </div>
+                    </div>
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            D
+                        </div>
+                        <div>
+                          <br>  1 <br>1
+                        </div>
+                    </div>
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            +/-
+                        </div>
+                        <div>
+                          <br>  6<br>3
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div style="color: rgb(66, 171, 56);">
+                        Points
+                    </div>
+                    <div style="color:rgb(66, 171, 56); ;">
+                       <br> 12 <br>
+                    
+                        10
+                    </div>
+                </div>
+            </div>
+            <div class="boule">
+                <div class="left">
+                    <div style="color: rgb(239, 120, 21);">
+                        Equipe GI
+                    </div>
+                    <div>
+                       <br> Mauritanie <br>
+                    
+                        RD Congo
+                    </div>
+                </div>
+                <div class="milieu">
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            J
+                        </div>
+                        <div>
+                         <br>   5 <br>5
+                        </div>
+                    </div>
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            V
+                        </div>
+                        <div>
+                          <br>  2 <br>2
+                        </div>
+                    </div>
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            N
+                        </div>
+                        <div>
+                          <br>  2 <br>1
+                        </div>
+                    </div>
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            D
+                        </div>
+                        <div>
+                          <br>  1 <br>2
+                        </div>
+                    </div>
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            +/-
+                        </div>
+                        <div>
+                          <br>  4<br>2
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div style="color: rgb(66, 171, 56);">
+                        Points
+                    </div>
+                    <div style="color:rgb(66, 171, 56); ;">
+                       <br> 8<br>
+                    
+                        7
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="class">
+            
+            <div class="boule">
+                <div class="left">
+                    <div style="color: rgb(239, 120, 21);">
+                        Equipe GJ
+                    </div>
+                    <div>
+                       <br> Guinée Equatoriale <br>
+                    
+                        Tunisie
+                    </div>
+                </div>
+                <div class="milieu">
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            J
+                        </div>
+                        <div>
+                         <br>   5 <br>5
+                        </div>
+                    </div>
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            V
+                        </div>
+                        <div>
+                          <br>  4 <br>3
+                        </div>
+                    </div>
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            N
+                        </div>
+                        <div>
+                          <br>  0 <br>1
+                        </div>
+                    </div>
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            D
+                        </div>
+                        <div>
+                          <br>  1 <br>1
+                        </div>
+                    </div>
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            +/-
+                        </div>
+                        <div>
+                          <br>  2<br>7
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div style="color: rgb(66, 171, 56);">
+                        Points
+                    </div>
+                    <div style="color:rgb(66, 171, 56); ;">
+                       <br> 12 <br>
+                    
+                        10
+                    </div>
+                </div>
+            </div>
+            <div class="boule">
+                <div class="left">
+                    <div style="color: rgb(239, 120, 21);">
+                        Equipe GK
+                    </div>
+                    <div>
+                       <br> Afrique du Sud <br>
+                    
+                        Maroc
+                    </div>
+                </div>
+                <div class="milieu">
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            J
+                        </div>
+                        <div>
+                         <br>   4<br>3
+                        </div>
+                    </div>
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            V
+                        </div>
+                        <div>
+                          <br>  2 <br>2
+                        </div>
+                    </div>
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            N
+                        </div>
+                        <div>
+                          <br>  1 <br>0
+                        </div>
+                    </div>
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            D
+                        </div>
+                        <div>
+                          <br>  1 <br>1
+                        </div>
+                    </div>
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            +/-
+                        </div>
+                        <div>
+                          <br>  1<br>2
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div style="color: rgb(66, 171, 56);">
+                        Points
+                    </div>
+                    <div style="color:rgb(66, 171, 56); ;">
+                       <br> 7 <br>
+                    
+                        6
+                    </div>
+                </div>
+            </div>
+            <div class="boule">
+                <div class="left">
+                    <div style="color: rgb(239, 120, 21);">
+                        Equipe GL
+                    </div>
+                    <div>
+                       <br> Sénégal <br>
+                    
+                        Mozambique
+                    </div>
+                </div>
+                <div class="milieu">
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            J
+                        </div>
+                        <div>
+                         <br>   5 <br>5
+                        </div>
+                    </div>
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            V
+                        </div>
+                        <div>
+                          <br>  4 <br>2
+                        </div>
+                    </div>
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            N
+                        </div>
+                        <div>
+                          <br>  1 <br>1
+                        </div>
+                    </div>
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            D
+                        </div>
+                        <div>
+                          <br>  0 <br>2
+                        </div>
+                    </div>
+                    <div class="miaou">
+                        <div style="color:rgb(239, 120, 21);">
+                            +/-
+                        </div>
+                        <div>
+                          <br>  8<br>-2
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div style="color: rgb(66, 171, 56);">
+                        Points
+                    </div>
+                    <div style="color:rgb(66, 171, 56); ;">
+                       <br> 13<br>
+                    
+                        7
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footlog">
+            <br>
+            <img src="IMG/Plan_de_travail_15x.png" alt="" srcset="" height="100" style="margin-left: 10%;">
+        </div>
+        <div class="infofoot">
+            <div>
+                <h1>Localisation</h1>
+                <p>Info@dabalixpress.com</p>
+                <p>Cocody angre les oscars, Riviera 2, Zone 4 </p>
+                <p>et Plateau rue des Banques </p>
+            </div>
+            <div>
+                <h1>Entreprise</h1>
+                <p>A propos</p>
+                <p>IDabali Blog</p>
+                <p>Collaboration </p>
+                <p>Media </p>
+            </div>
+            <div>
+                <h1>Plus d’info</h1>
+                <p>Cookies</p>
+                <p>Politique de confidentialité</p>
+                <p>Appel d’offres </p>
+                <p>Accessibilité site </p>
+            </div>
+            <div>
+                <h1>Aide</h1>
+                <p>Contact</p>
+                <p>Livraisons</p>
+                <p>Retours </p>
+                <p>FAQ's </p>
+            </div>
+        </div>
+        <div id="follow">
+            <h1>Suivez nous</h1>
+        </div>
+        <div class="svg">
+            <svg xmlns="http://www.w3.org/2000/svg" height="40"
+                viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <style>
+                    svg {
+                        fill: #f6f6f6
+                    }
+                </style>
+                <path
+                    d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="40"
+                viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <style>
+                    svg {
+                        fill: #f6f6f6
+                    }
+                </style>
+                <path
+                    d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="40"
+                viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <style>
+                    svg {
+                        fill: #f6f6f6
+                    }
+                </style>
+                <path
+                    d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="40"
+                viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <style>
+                    svg {
+                        fill: #f6f6f6
+                    }
+                </style>
+                <path
+                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+            </svg>
+        </div>
+        <br>
+        <div class="trait"></div>
+        <br>
+        <div class="copyright">
+            <h3>Copyright © 2023 Dabali Xpress. Tout droit réservé.</h3>
+        </div>
+        <br>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

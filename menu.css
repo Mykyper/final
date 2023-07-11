@@ -1,0 +1,824 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 253, 245)
+}
+
+@font-face {
+    font-family: Yolele;
+    src: url("Fonts/Yolele-Regular.ttf")
+}
+
+@font-face {
+    font-family: Plakat;
+    src: url("Fonts/plakkaat/Plakkaat.ttf");
+}
+
+@font-face {
+    font-family: Causten;
+    src: url("Fonts/Causten-font-family-YHFRJUN-2020-12-19/Causten-Light.otf");
+}
+
+@font-face {
+    font-family: Caustrong;
+    src: url("Fonts/Causten-font-family-YHFRJUN-2020-12-19/Causten-Regular.otf");
+}
+
+header {
+    padding: 0.5rem 0 5rem;
+    font-size: 1.25rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-flex;
+    margin-right: 60px;
+}
+
+#nav {
+    font-family: Yolele;
+    position: relative;
+    padding: 1rem 0 0.5rem;
+    margin: 0 1.5rem;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#nav::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: 50% 50%;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    transition: transform 250ms;
+}
+
+#nav:hover::after {
+    transform: translateX(-50%) scaleX(1);
+}
+
+input[type="search"] {
+    border-radius: 10px;
+    height: 28px;
+    margin-top: 8%;
+    font-family: Yolele;
+    background-color: transparent;
+    border-color: rgb(0, 0, 0);
+}
+
+input[type="search"]::placeholder {
+    color: black;
+}
+.special{
+    text-align: center;margin-top: 3%;font-family: Plakat;font-size: 100px;
+}
+.can {
+    display: flex;
+    margin-top: 5%;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.can1 {
+    display: block;
+    background-color: white;
+    width: 70%;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+#title1 {
+    font-family: Plakat;
+    font-size: 45px;
+    position: relative;
+    z-index: 1;
+    margin-left: 10%;
+
+}
+
+#graphe1 {
+    font-family: Caustrong;
+    font-size: 35px;
+    max-width: 500px;
+    text-align: left;
+    margin-left: 10%;
+}
+
+#graphe1 h6 {
+
+    position: relative;
+    top: 50px;
+}
+
+.container {
+    text-align: center;
+}
+
+.secret {
+    display: none;
+}
+
+.can2 {
+    border-top-right-radius: 15%;
+    width: 60%;
+}
+
+.can2 img {
+    border-top-right-radius: 15%;
+}
+
+.menu h1 {
+    text-align: center;
+    margin-top: 3%;
+    font-family: Plakat;
+    font-size: 100px;
+}
+
+.menutip {
+    margin-top: 5%;
+}
+
+.menutip img {
+    position: relative;
+    left: 25%;
+    align-self: center;
+}
+
+.menutip h1 {
+    text-align: center;
+    font-family: Yolele;
+    font-size: 70px;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    font-family: Caustrong;
+    font-size: 30px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.premiere {
+    display: none;
+}
+
+.deuxieme {
+    display: none;
+}
+
+.abidjan {
+    display: none;
+}
+
+.pedro {
+    display: none;
+}
+
+.yam {
+    display: none;
+}
+
+#food {
+    transition: all 0.5s;
+}
+
+#food:hover {
+    height: 170px;
+}
+
+footer {
+    background-color: rgb(44, 29, 29);
+    margin: 0;
+    padding: 0;
+    margin-top: 10%;
+}
+
+.bigba {
+    display: none;
+}
+
+#gbo {
+    cursor: pointer;
+}
+
+.garba {
+    display: flex;
+    justify-content: space-between;
+}
+
+.description {
+    margin-left: 5%;
+}
+
+.description h1 {
+    font-family: Yolele;
+    font-size: 50px;
+}
+
+.description h2 {
+    font-family: Caustrong;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.description h4 {
+    font-family: Caustrong;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.description p {
+    width: 420px;
+    font-size: 25px;
+    font-family: Causten;
+}
+.num{
+    margin-top: 5%
+}
+aside {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    font-family: Caustrong;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    max-width: 200px;
+    font-family: Causten;
+    font-weight: bolder;
+}
+
+section button {
+    font-family: Caustrong;
+    border: 1px solid black;
+    height: 40px;
+    width: 90px;
+}
+
+.infofoot {
+    display: flex;
+    color: white;
+    margin-left: 2%;
+    justify-content: space-around;
+    font-family: Causten;
+}
+
+.infofoot h1 {
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.infofoot h1:hover {
+    color: yellow;
+    margin-left: 4%;
+}
+
+.infofoot p {
+    transition: 0.5s all;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.infofoot p:hover {
+    color: yellow;
+    margin-left: 5%;
+}
+
+#follow {
+    margin-left: 8%;
+    font-family: Causten;
+    color: white;
+}
+
+#active {
+    color: red;
+}
+
+.svg {
+    margin-left: 7%;
+}
+
+.svg svg {
+    margin-left: 1%;
+}
+
+.trait {
+    width: 93%;
+    height: 2px;
+    background-color: rgb(102, 92, 93);
+    margin-left: 4%;
+}
+
+.copyright {
+    text-align: center;
+    font-family: Causten;
+    color: white;
+}
+
+.secret {
+    display: none;
+    justify-content: center;
+}
+
+/* Sidenav menu */
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    background-color: #e8e8e8;
+    padding-top: 60px;
+    transition: left 0.5s ease;
+    font-family: Caustrong;
+}
+
+/* Sidenav menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #111;
+}
+
+.sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Active class */
+.sidenav.active {
+    left: 0;
+}
+
+/* Close btn */
+.sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+/* Icône burger */
+.burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    position: relative;
+    top: 20px;
+}
+
+.garbn {
+    display: block;
+}
+
+.garbr {
+    display: none;
+}
+
+@media(max-width: 426px) {
+    .special{
+        font-size: 60px;
+    }
+    #prix{
+        margin-left: 40%;
+    }
+    .bigba{
+        margin-bottom: 20%;
+    }
+    .description button{
+        margin-left: 20%;
+    }
+    .garba{
+        display: flex;
+        flex-direction:column-reverse ;
+    }
+    .garbn {
+        display: none;
+        
+    }
+
+    .garbr {
+        display: block;
+        height: 300px;
+        width: 300px;
+        margin-left: 15%;
+       border-bottom: 1 px solid;
+    }
+    section{
+        margin-left: 10%;
+        max-width: 300px;
+        justify-content: space-around;
+    }
+    .secret {
+        display: flex;
+        justify-content: space-between;
+        background-size: cover;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 250px;
+        position: fixed;
+        z-index: 3;
+        top: 0;
+        left: -250px;
+        background-color: rgb(44, 29, 29);
+        padding-top: 60px;
+        transition: left 0.5s ease;
+
+    }
+
+    /* Sidenav menu links */
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+
+    }
+
+    .sidenav a:hover {
+        color: rgb(229, 34, 35);
+    }
+
+    .sidenav ul {
+
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: block;
+    }
+
+    /* Active class */
+    .sidenav.active {
+        left: 0;
+    }
+
+    /* Close btn */
+    .sidenav .close {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+    }
+
+    /* Icône burger */
+    .burger-icon span {
+        display: block;
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 0;
+        position: relative;
+        top: 20px;
+    }
+
+    header {
+        display: none;
+    }
+
+    .secret {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .can {
+        display: block;
+        box-shadow: none;
+    }
+
+    .can1 {
+        background-color: transparent;
+    }
+
+    .can2 {
+        width: 427px;
+        border-top-right-radius: 0%;
+    }
+
+    .can2 img {
+        width: 427px;
+        border-top-right-radius: 0%;
+        height: 350px;
+    }
+
+    #title1 h1 {
+        font-size: 50px;
+        position: relative;
+        left: 17%;
+        text-align: center;
+    }
+
+    #graphe1 {
+        text-align: center;
+        position: relative;
+        left: 17%;
+    }
+
+    .yam .can .can1 #title1 h1 {
+        left: 0%;
+    }
+
+    .menu h1 {
+        font-size: 50px;
+    }
+
+    .menutip img {
+        position: relative;
+        left: 5%;
+        width: 400px;
+    }
+
+    .menutip h1 {
+        font-size: 40px;
+    }
+
+    .list {
+        font-size: 15px;
+        margin: 5%;
+    }
+
+    footer {
+
+        width: 427px;
+    }
+
+    .footlog {
+        margin-left: 27%;
+    }
+
+    .infofoot {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #follow {
+        margin-left: 27%;
+    }
+
+    .svg {
+        margin-left: 27%;
+    }
+
+    .trait {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 769px) and (min-width:426px) {
+    .special{
+        font-size: 65px;
+    }
+    .description p{
+        width: 670px;
+        text-align: center;
+        margin-left: 1%;
+    }
+    .description h1{
+        margin-left: 25%;
+    }
+    .description h4{
+        margin-left: 40%;
+    }
+    #prix{
+        margin-left: 42%;
+    }
+    .bigba{
+        margin-bottom: 20%;
+    }
+    .description button{
+        margin-left: 31%;
+    }
+    .garba{
+        display: flex;
+        flex-direction:column-reverse ;
+    }
+    .garbn {
+        display: none;
+        
+    }
+    aside{
+        max-width: 100%;
+       justify-content: space-evenly;
+       margin-left: 5%;
+    }
+    .garbr {
+        display: block;
+        height: 400px;
+        width: 400px;
+        margin-left: 20%;
+       border-bottom: 1 px solid;
+    }
+    section{
+        margin-left: 10%;
+        max-width: 500px;
+        justify-content: space-between;
+    }
+    section button {
+        font-family: Caustrong;
+        border: 1px solid black;
+        height: 60px;
+        width: 110px;
+        font-size: 25px;
+    }
+    .num{
+        font-size: 25px; 
+        margin-top: 3%;
+    }
+    .secret {
+        display: flex;
+        justify-content: space-between;
+        background-size: cover;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 250px;
+        position: fixed;
+        z-index: 3;
+        top: 0;
+        left: -250px;
+        background-color: rgb(44, 29, 29);
+        padding-top: 60px;
+        transition: left 0.5s ease;
+
+    }
+
+    /* Sidenav menu links */
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+
+    }
+
+    .sidenav a:hover {
+        color: rgb(229, 34, 35);
+    }
+
+    .sidenav ul {
+
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: block;
+    }
+
+    /* Active class */
+    .sidenav.active {
+        left: 0;
+    }
+
+    /* Close btn */
+    .sidenav .close {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+    }
+
+    /* Icône burger */
+    .burger-icon span {
+        display: block;
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 0;
+        position: relative;
+        top: 20px;
+    }
+
+    header {
+        display: none;
+    }
+
+    .can {
+        display: block;
+        box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.4);
+        width: 768px;
+    }
+
+    .can1 {
+        background-color: transparent;
+    }
+
+    .can2 {
+        width: 768px;
+        border-top-right-radius: 0%;
+    }
+
+    .can2 img {
+        width: 768px;
+        border-top-right-radius: 0%;
+        height: 550px;
+
+    }
+
+    #title1 h1 {
+        font-size: 50px;
+        position: relative;
+        left: 17%;
+        text-align: center;
+    }
+
+    #graphe1 {
+        text-align: center;
+        position: relative;
+        left: 17%;
+    }
+
+    .yam .can .can1 #title1 h1 {
+        left: 20%;
+        text-align: center;
+    }
+
+    .menu h1 {
+        font-size: 50px;
+    }
+
+    .menutip img {
+        position: relative;
+        left: 5%;
+        width: 700px;
+    }
+
+    .menutip h1 {
+        font-size: 45px;
+    }
+
+    .list {
+        font-size: 25px;
+        margin: 5%;
+    }
+
+    footer {
+        padding: 10px;
+        width: 766px;
+    }
+
+    .footlog {
+        margin-left: 37%;
+    }
+
+    .infofoot {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #follow {
+        margin-left: 39%;
+    }
+
+    .svg {
+        margin-left: 38%;
+    }
+
+    .trait {
+        margin-left: 0;
+    }
+}

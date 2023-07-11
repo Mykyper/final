@@ -1,0 +1,918 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 253, 245)
+}
+
+@font-face {
+    font-family: Yolele;
+    src: url("Fonts/Yolele-Regular.ttf")
+}
+@font-face {
+    font-family: Plakat;
+    src: url("Fonts/plakkaat/Plakkaat.ttf") ;
+}
+@font-face {
+    font-family: Causten;
+    src: url("Fonts/Causten-font-family-YHFRJUN-2020-12-19/Causten-Light.otf");
+}
+@font-face {
+  font-family: Caustrong;
+  src: url("Fonts/Causten-font-family-YHFRJUN-2020-12-19/Causten-Regular.otf");
+}
+header {
+    background-image: url(IMG/Supporters-CAN2.jpg);
+    background-size: cover;
+    height: 550px;
+    border-radius: 0 0 0 80px;
+    padding: 0.5rem 0 5rem;
+    font-size: 1.25rem;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+}
+#countdown{
+  color: black;
+                  font-size: 24px;
+                  justify-content: center;
+                  margin-top: 50px;
+                  border-radius: 40px 40px 40px 40px;
+                  background-color: white;
+                  padding: 10px;
+                  height: 50px;
+                  text-align: center;
+}
+.navbar{
+    display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ul {
+    display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+    display: inline-flex;
+    margin-right: 60px;
+}
+
+#nav{
+    font-family: Yolele;
+    position: relative;
+    padding: 1rem 0 0.5rem;
+    margin: 0 1.5rem;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#nav::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: 50% 50%;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transition: transform 250ms;
+}
+
+#nav:hover::after {
+    transform: translateX(-50%) scaleX(1);
+}
+
+input[type="search"] {
+    border-radius: 10px;
+    height: 28px;
+    margin-top: 8%;
+    font-family: Yolele;
+    background-color: transparent;
+    border-color: white;
+}
+
+input[type="search"]::placeholder {
+    color: white;
+    
+}
+#droite img{
+  transition: 0.5s all;
+  cursor: pointer;
+}
+#droite img:hover{
+  height: 60px;
+}
+#countdown{
+  color: black;
+  font-size: 24px;
+  justify-content: center;
+  margin-top: 50px;
+  border-radius: 40px 40px 40px 40px;
+  background-color: white;
+  padding: 10px;
+  font-family: Causten;
+  width: 625px;
+  margin-left: 28%;
+  font-size: 23.5px;
+}
+.yay{
+    text-align: center;
+    margin-top: 2%;
+    font-family: Plakat;
+    color: white;
+    font-size: 35px;
+    
+}
+.can{
+    display: flex; 
+    margin-top: 5%;
+    margin-left: 5%;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.4);
+}
+.can1{
+    display: block;
+    background-color: white;
+}
+#title1{
+    font-family: Plakat;
+    font-size: 56px;
+    position: relative;
+    z-index: 1;
+    left: 25%;
+    width: 100%;
+}
+#graphe1{
+    font-family: Causten;
+    font-size: 35px;
+    margin-top: 5%;
+   
+    max-width: 500px;
+    text-align: center;
+    left: 20%;
+}
+.can2 img{
+   border-top-right-radius: 15%;
+}
+.plus {
+  position: relative;
+  display: inline-flex;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgb(229, 93, 84);
+  padding-left: 2rem;
+  overflow: hidden;
+  z-index: 1;
+  align-items: center;
+  box-shadow: 0px 3px 4px -4px rgba(0, 0, 0, 0.75);
+  border-radius: 80px 80px 80px 80px;
+}
+.plus::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(225, 66, 54);
+  z-index: -1;
+  transition: transform 750ms;
+}
+.plus span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2rem;
+  padding: 1rem;
+  overflow: hidden;
+  background-color: rgb(225, 66, 54);
+}
+.plus svg {
+  max-width: 30px;
+  width: 100%;
+  height: auto;
+  max-height: 30px;
+  fill: white;
+}
+.plus:hover::before {
+  transform: scaleX(1);
+}
+.plus:hover svg {
+  -webkit-animation: moveArrow 750ms;
+          animation: moveArrow 750ms;
+}
+
+@-webkit-keyframes moveArrow {
+  0% {
+    transform: translateX(0px);
+  }
+  49% {
+    transform: translateX(50px);
+  }
+  50% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes moveArrow {
+  0% {
+    transform: translateX(0px);
+  }
+  49% {
+    transform: translateX(50px);
+  }
+  50% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.menu{
+    margin-top: 1%;
+    background-color: rgb(255, 253, 245);
+    display: block;
+}
+#past h1{
+  margin-top: 11%;font-family: Causten;
+}
+#all h1{
+  margin-top: 26%;font-family: Causten
+}
+#pain h1{
+  margin-top: 8%;font-family: Causten
+}
+#b1 h1{
+  margin-top: 10%;font-family: Causten
+}
+.menu h1{
+  text-align: center;margin-top: 3%;font-family: Plakat;font-size: 100px;
+}
+#poulet h1{
+  margin-top: 11%;font-family: Causten;
+}
+#acc h1{
+  margin-top: 8%;font-family: Causten
+}
+#b2 h1{
+  margin-top: 12%;font-family: Causten;
+}
+.temps1{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.menuimg1 img{
+    border-top-right-radius:15%
+}
+.menuimg2 img{
+    border-bottom-left-radius:15% ;
+}
+#text1{
+    margin-left: 10%;
+    
+}
+#text1 p{
+  font-family: Causten;font-size: 35px;margin-left: 5%;
+}
+.prop{
+    display: flex;
+}
+.prop h1{
+  font-size: 35px;
+}
+.cercle{
+    font-family: Yolele;
+    text-align: center;
+    justify-self: center;
+    color: rgb(0, 0, 0);
+    height: 50px;
+   background-image: url(Icon/Icon-2.png);
+   background-size: cover;
+   min-width: 600px;
+   height: 100px;
+
+    
+}
+.temps2{
+    
+    display: flex;
+    
+}
+.achète{
+    text-align: center;
+    margin-top: 3%;
+    font-family: Yolele;
+    font-size: 36px;
+    background-image: url("IMG/motif1.1.jpg");
+   
+    background-size: contain;
+}
+input[type="button"]{
+    width: fit-content;
+    background-color: black;
+    color: white;
+    font-family: Causten;
+    height: 50px;
+    border-radius:30px 30px 30px 30px ;
+    font-size: 25px;
+}
+ input[type="button"]:hover{
+    
+    cursor: pointer;
+}
+.actu{
+    margin-top: 5%;
+    font-family: Yolele;
+    text-align: center;
+}
+.actu h1{
+  font-size: 80px
+}
+.list{
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+.list img{
+  transition: 0.5s all;
+}
+.list img:hover{
+  height: 320px;
+  width: 420px;
+}
+footer{
+    background-color: rgb(44, 29, 29);
+    margin: 0;
+    padding: 0;
+}
+.infofoot{
+    display: flex;
+    color: white;
+    margin-left: 2%;
+    justify-content: space-around;
+    font-family: Causten;
+}
+.infofoot h1{
+  transition: 0.5s all;
+  cursor: pointer;
+}
+.infofoot h1:hover{
+  color: yellow;
+  margin-left: 4%;
+}
+.infofoot p{
+  transition: 0.5s all;
+  cursor: pointer;
+  position: relative;
+
+}
+.infofoot p:hover{
+  color: yellow;
+  margin-left: 5%;
+}
+#follow{
+    margin-left: 8%;
+    font-family: Causten;
+    color: white;
+}
+.svg{
+    margin-left: 7%;
+}
+.svg svg{
+    margin-left: 1%;
+}
+.trait {
+    width: 93%;
+    height: 2px;
+    background-color: rgb(102, 92, 93);
+    margin-left: 4%;
+}
+.copyright{
+text-align: center;
+font-family: Causten;
+color: white;
+}
+.secret{
+  display:none;
+  justify-content: center;
+}
+/* Sidenav menu */
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: -250px;
+  background-color: #e8e8e8;
+  padding-top: 60px;
+  transition: left 0.5s ease;
+  font-family: Caustrong;
+}
+
+/* Sidenav menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #111;
+}
+
+.sidenav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Active class */
+.sidenav.active {
+  left: 0;
+}
+
+/* Close btn */
+.sidenav .close {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+/* Icône burger */
+.burger-icon span {
+  display: block;
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+  position: relative;
+  top: 20px;
+}
+@media only screen and (max-width: 426px) {
+  .actu h1{
+    font-size: 50px
+  }
+  .plus svg {
+    max-width: 20px;
+    width: 100%;
+    height: 15px;
+   
+    fill: white;
+  }
+    /* Add your responsive styles here */
+    .prop h1{
+      font-size: 27px;
+    }
+    .secret{
+      display: flex;
+      justify-content: space-between;
+      background-size: cover;
+      margin-right: 5%;
+      margin-left: 5%;
+    }
+    .sidenav {
+      height: 100%;
+      width: 250px;
+      position: fixed;
+      z-index: 3;
+      top: 0;
+      left: -250px;
+      background-color: rgb(44, 29, 29);
+      padding-top: 60px;
+      transition: left 0.5s ease;
+      
+    }
+    
+    /* Sidenav menu links */
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: white;
+      display: block;
+      transition: 0.3s;
+      
+    }
+    
+    .sidenav a:hover {
+      color: rgb(229, 34, 35);
+    }
+    
+    .sidenav ul {
+      
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: block;
+    }
+    
+    /* Active class */
+    .sidenav.active {
+      left: 0;
+    }
+    
+    /* Close btn */
+    .sidenav .close {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+    }
+    
+    /* Icône burger */
+    .burger-icon span {
+      display: block;
+      width: 35px;
+      height: 5px;
+      background-color: black;
+      margin: 6px 0;
+      position: relative;
+      top: 20px;}
+    header {
+    
+      display: none;
+    }
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    li {
+      display: block;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+    #nav {
+      margin: 0;
+    }
+    input[type="search"] {
+      margin-top: 5%;
+    }
+    .yay {
+      margin-top: 10%;
+      font-size: 25px;
+    }
+    .can {
+      margin-top: 5%;
+      margin-left: 0;
+      display: block;
+    }
+    .can1 {
+      display: block;
+      background-color: transparent;
+      margin-bottom: 5%;
+    }
+    .menu h1{
+      text-align: center;margin-top: 10%;font-family: Plakat;font-size: 50px;
+    }
+    #title1 {
+      left: 0;
+      text-align: center;
+      font-size: 30px;
+    }
+    #graphe1 {
+      left: 0;
+      font-size: 17px;
+    }
+    .can2 img {
+      border-top-right-radius: 0;
+      width: 415px;
+    }
+    .menu {
+      margin-top: 5%;
+      text-align: center;
+    }
+    #past h1{
+      margin-top: 14%;font-family: Causten;
+      font-size: 30px;
+    }
+    #all h1{
+      margin-top: 32%;font-family: Causten;
+      font-size: 30px;
+      
+    }
+    #pain h1{
+      margin-top: 10%;font-family: Causten;
+      font-size: 30px;
+      position: relative;
+      right: 8%;
+    }
+    #b1 h1{
+      margin-top: 15%;font-family: Causten;
+      font-size: 30px;
+    }
+    #poulet h1{
+      margin-top: 12%;font-family: Causten;
+      font-size: 30px;
+    }
+    #acc h1{
+      margin-top: 10%;font-family: Causten;
+      position: relative;
+      right: 6%;
+      font-size: 30px;
+    }
+    #b2 h1{
+      margin-top: 15%;font-family: Causten;
+      font-size: 30px;
+    }
+    .temps1 {
+      flex-direction: column;
+      font-size: 17px;
+    }
+    
+    .menuimg1 img {
+      border-top-right-radius: 0;
+      width: 415px;
+      height: 400px;
+    }
+    .menuimg2 img {
+        border-bottom-left-radius: 0;
+        width: 415px;
+        height: 400px;
+    }
+    #text1 {
+      margin-left: 0;
+    }
+    #text1 p{
+      font-size: 30px;
+    }
+    .cercle {
+      min-width: 100%;
+      height: 200px;
+    }
+    .temps2 {
+      flex-direction: column-reverse;
+    }
+    .achète {
+      margin-top: 5%;
+      font-size: 13px;
+    }
+    input[type="button"] {
+      font-size: 20px;
+    }
+    .actu {
+      margin-top: 5%;
+    }
+    .list {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .list img{
+      height: 200px;
+      width: 300px;
+    }
+    footer {
+      padding: 10px;
+    }
+    .footlog{
+        margin-left: 25%;
+    }
+    .infofoot {
+        display: none;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    #follow {
+      margin-left: 25%;
+    }
+    .svg {
+      margin-left: 25%;
+    }
+    .trait {
+      margin-left: 0;
+    }
+  }
+  @media only screen and (max-width: 769px) and (min-width:426px) {
+    #past h1{
+      margin-top: 11%;font-family: Causten;
+      font-size: 35px;
+    }
+    #all h1{
+      margin-top: 26%;font-family: Causten;
+      font-size: 35px;
+      
+    }
+    #pain h1{
+      margin-top: 8%;font-family: Causten;
+      font-size: 35px;
+    }
+    #b1 h1{
+      margin-top: 10%;font-family: Causten;
+      font-size: 35px;
+    }
+    #poulet h1{
+      margin-top: 11%;font-family: Causten;
+      font-size: 35px;
+    }
+    #acc h1{
+      margin-top: 8%;font-family: Causten;
+      font-size: 35px;
+    }
+    #b2 h1{
+      margin-top: 12%;font-family: Causten;
+      font-size: 35px;
+    }
+   .food h1{
+    font-size: 10px;
+   }
+   .secret{
+    display: flex;
+    justify-content: space-between;
+    background-size: cover;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  .sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: -250px;
+    background-color: rgb(44, 29, 29);
+    padding-top: 60px;
+    transition: left 0.5s ease;
+    
+  }
+  
+  /* Sidenav menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    
+  }
+  
+  .sidenav a:hover {
+    color: rgb(229, 34, 35);
+  }
+  
+  .sidenav ul {
+    
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+  }
+  
+  /* Active class */
+  .sidenav.active {
+    left: 0;
+  }
+  
+  /* Close btn */
+  .sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  
+  /* Icône burger */
+  .burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    position: relative;
+    top: 20px;}
+    header {
+        height: 300px;
+        display: none;
+      }
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+      #nav {
+        margin: 0;
+      }
+      input[type="search"] {
+        margin-top: 5%;
+      }
+      .yay {
+        margin-top: 10%;
+        font-size: 25px;
+      }
+      .can {
+        margin-top: 5%;
+        margin-left: 0;
+        display: block;
+      }
+      .can1 {
+        display: block;
+       background-color: transparent;
+        margin-bottom: 5%;
+      }
+      #title1 {
+        left: 0;
+        text-align: center;
+        font-size: 25px;
+      }
+      #graphe1 {
+        position: relative;
+        left: 18%;
+        font-size: 20px;
+        
+      }
+      .can2 img {
+        border-top-right-radius: 0;
+        width: 765px;
+        justify-content: center;
+      }
+      .menu {
+        margin-top: 5%;
+        text-align: center;
+      }
+      .menu h1{
+        font-size: 70px;
+      }
+      .temps1 {
+        flex-direction: column;
+        justify-content: center;
+      }
+      
+      .menuimg1 img {
+        border-top-right-radius: 0;
+        width: 765px;
+        height: 600px;
+      }
+      .menuimg2 img {
+          border-bottom-left-radius: 0;
+          width: 765px;
+          height: 700px;
+      }
+      #text1 {
+        margin-left: 0;
+      }
+      #text1 h1{
+        margin-left: 0;
+      }
+      
+      .cercle {
+        min-width: 100%;
+        height: 200px;
+      }
+      .temps2 {
+        flex-direction: column-reverse;
+      }
+      .achète {
+        margin-top: 5%;
+        font-size: 20px;
+      }
+      input[type="button"] {
+        font-size: 20px;
+      }
+      .actu {
+        margin-top: 5%;
+      }
+      .list {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      footer {
+        padding: 10px;
+      }
+      .footlog{
+          margin-left: 35%;
+      }
+      .infofoot {
+          display: none;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      #follow {
+        margin-left: 38%;
+      }
+      .svg {
+        margin-left: 37%;
+      }
+      .trait {
+        margin-left: 0;
+      }
+    
+}

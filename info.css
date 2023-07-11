@@ -1,0 +1,748 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 253, 245)
+}
+
+@font-face {
+  font-family: Yolele;
+  src: url("Fonts/Yolele-Regular.ttf")
+}
+
+@font-face {
+  font-family: Plakat;
+  src: url("Fonts/plakkaat/Plakkaat.ttf");
+}
+
+@font-face {
+  font-family: Causten;
+  src: url("Fonts/Causten-font-family-YHFRJUN-2020-12-19/Causten-Light.otf");
+}
+
+@font-face {
+  font-family: Caustrong;
+  src: url("Fonts/Causten-font-family-YHFRJUN-2020-12-19/Causten-Regular.otf");
+}
+
+header {
+
+
+
+
+  padding: 0.5rem 0 5rem;
+  font-size: 1.25rem;
+
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-flex;
+  margin-right: 60px;
+}
+
+#nav {
+  font-family: Yolele;
+  position: relative;
+  padding: 1rem 0 0.5rem;
+  margin: 0 1.5rem;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#nav::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: 50% 50%;
+  width: 100%;
+  height: 3px;
+  background-color: rgb(0, 0, 0);
+  transition: transform 250ms;
+}
+
+#nav:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+input[type="search"] {
+  border-radius: 10px;
+  height: 28px;
+  margin-top: 8%;
+  font-family: Yolele;
+  background-color: transparent;
+  border-color: rgb(0, 0, 0);
+}
+
+input[type="search"]::placeholder {
+  color: black;
+
+}
+
+.actu {
+  margin-top: 2%;
+  font-family: Plakat;
+  text-align: center;
+}
+
+.actu h1 {
+  font-size: 80px;
+}
+
+.list {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+}
+
+.achète {
+  text-align: center;
+  margin-top: 3%;
+  font-family: Yolele;
+  font-size: 36px;
+  background-image: url("IMG/motif1.1.jpg");
+
+  background-size: contain;
+}
+
+input[type="button"] {
+  width: fit-content;
+  background-color: black;
+  color: white;
+  font-family: Causten;
+  height: 50px;
+  border-radius: 30px 30px 30px 30px;
+  font-size: 25px;
+}
+
+input[type="button"]:hover {
+
+  cursor: pointer;
+}
+
+.temps {
+  text-align: center;
+  margin-top: 3%;
+  font-family: Plakat;
+  font-size: 100px;
+}
+
+.vid {
+  height: 500px;
+  justify-content: center;
+  background-color: rgb(44, 29, 29);
+  margin-left: 15%;
+  margin-right: 15%;
+
+}
+
+.best {
+  text-align: center;
+  margin-top: 3%;
+  font-family: Yolele;
+  font-size: 30px;
+}
+
+.up {
+  margin-left: 15%;
+  margin-top: 2%;
+  justify-content: space-between;
+}
+
+.up img {
+  margin: 0.1%;
+}
+
+.victory {
+  height: 400px;
+  width: 530px;
+  background-image: url("IMG/F3.jpg");
+}
+
+.victory h3 {
+  top: 50%
+}
+
+.ekip {
+  text-align: center;
+  display: none;
+}
+.ekip h1{
+  font-size: 80px;font-family: Plakat;
+}
+.square {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2%;
+}
+
+#carre {
+  display: block;
+  width: 250px;
+  height: 110px;
+  font-family: Caustrong;
+  box-shadow: 2px 8px 4px rgba(0, 0, 0, 0.4);
+  font-weight: bolder;
+}
+
+.letter {
+  background-color: rgb(239, 120, 21);
+  color: white;
+  text-align: center;
+}
+
+.country {
+  text-align: left;
+  margin-left: 5%;
+  background-color: white;
+  margin-top: 2%;
+}
+
+.class {
+  display: flex;
+  font-family: Caustrong;
+  font-weight: bolder;
+  justify-content: space-evenly;
+  margin-top: 2%;
+}
+
+.boule {
+  display: flex;
+  width: 450px;
+  height: 100px;
+  background-color: white;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 2px 8px 4px rgba(0, 0, 0, 0.4);
+  justify-content: space-around;
+}
+
+.left {
+  display: block;
+  text-align: left;
+
+}
+
+.milieu {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.miaou {
+  margin-right: 12%;
+}
+
+.right {
+  display: block;
+  text-align: center;
+}
+
+footer {
+  background-color: rgb(44, 29, 29);
+  margin: 0;
+  padding: 0;
+  margin-top: 5%;
+}
+
+.infofoot {
+  display: flex;
+  color: white;
+  margin-left: 2%;
+  justify-content: space-around;
+  font-family: Causten;
+}
+.infofoot h1{
+  transition: 0.5s all;
+  cursor: pointer;
+}
+.infofoot h1:hover{
+  color: yellow;
+  margin-left: 4%;
+}
+.infofoot p{
+  transition: 0.5s all;
+  cursor: pointer;
+  position: relative;
+
+}
+.infofoot p:hover{
+  color: yellow;
+  margin-left: 5%;
+}
+#follow {
+  margin-left: 8%;
+  font-family: Causten;
+  color: white;
+}
+
+.svg {
+  margin-left: 7%;
+}
+
+.svg svg {
+  margin-left: 1%;
+}
+
+.trait {
+  width: 93%;
+  height: 2px;
+  background-color: rgb(102, 92, 93);
+  margin-left: 4%;
+}
+
+.copyright {
+  text-align: center;
+  font-family: Causten;
+  color: white;
+}
+.secret{
+  display:none;
+  justify-content: center;
+}
+/* Sidenav menu */
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: -250px;
+  background-color: #e8e8e8;
+  padding-top: 60px;
+  transition: left 0.5s ease;
+  font-family: Caustrong;
+}
+
+/* Sidenav menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #111;
+}
+
+.sidenav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Active class */
+.sidenav.active {
+  left: 0;
+}
+
+/* Close btn */
+.sidenav .close {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+/* Icône burger */
+.burger-icon span {
+  display: block;
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+  position: relative;
+  top: 20px;
+}
+
+#active{
+  color: red;
+}
+/* Mobile Styles */
+@media only screen and (max-width: 426px) {
+  .secret{
+    display: flex;
+    justify-content: space-between;
+    background-size: cover;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  .sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: -250px;
+    background-color: rgb(44, 29, 29);
+    padding-top: 60px;
+    transition: left 0.5s ease;
+    
+  }
+  
+  /* Sidenav menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    
+  }
+  
+  .sidenav a:hover {
+    color: rgb(229, 34, 35);
+  }
+  
+  .sidenav ul {
+    
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+  }
+  
+  /* Active class */
+  .sidenav.active {
+    left: 0;
+  }
+  
+  /* Close btn */
+  .sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  
+  /* Icône burger */
+  .burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    position: relative;
+    top: 20px;}
+
+  /* Adjust the header padding and font size */
+  header {
+    display: none
+  }
+
+  .actu {
+    margin-top: 2%;
+  }
+
+  .actu h1 {
+    
+    font-size: 50px;
+  }
+
+  .list {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+  }
+  .list img{
+    height: 200px;
+    width: 300px;
+  }
+  .achète {
+    margin-top: 5%;
+    font-size: 13px;
+    width: 425px;
+    
+  }
+
+  input[type="button"] {
+    font-size: 20px;
+
+  }
+
+  .temps {
+    font-size: 50px;
+    margin-left: 25%;
+    display: none;
+  }
+
+  /* Adjust the height and margin of the video section */
+  .vid {
+    display: none;
+    position: relative;
+   right: 5%;
+    height: 300px;
+    /* margin-left: 5%; */
+    margin-right: 0%;
+  }
+  .best{
+    margin-top: 10%;
+    margin-left: 10%;
+  }
+  .vid img {
+    position: relative;
+    right: 20%;
+    bottom: 5%;
+  }
+
+  /* Adjust the margin and alignment of the "Up" section */
+  .up {
+    margin: 13%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .up img {
+    height: 200px;
+    width: 330px;
+  }
+
+  footer {
+    
+    width: 425px;
+  }
+  .footlog{
+      margin-left: 27%;
+  }
+  .infofoot {
+      display: none;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #follow {
+    margin-left: 27%;
+  }
+  .svg {
+    margin-left: 27%;
+  }
+  .trait {
+    margin-left: 0;
+  }
+  .ekip h1{
+    font-size: 50px;
+  }
+  .square{
+    display: inline-block;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  #carre{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .class{
+    display: block;
+    margin-top: 5%;
+  }
+  .boule{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 410px;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (max-width: 769px) and (min-width:426px) {
+  .secret{
+    display: flex;
+    justify-content: space-between;
+    background-size: cover;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  .sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: -250px;
+    background-color: rgb(44, 29, 29);
+    padding-top: 60px;
+    transition: left 0.5s ease;
+    
+  }
+  
+  /* Sidenav menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    
+  }
+  
+  .sidenav a:hover {
+    color: rgb(229, 34, 35);
+  }
+  
+  .sidenav ul {
+    
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+  }
+  
+  /* Active class */
+  .sidenav.active {
+    left: 0;
+  }
+  
+  /* Close btn */
+  .sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  
+  /* Icône burger */
+  .burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    position: relative;
+    top: 20px;}
+  header {
+    display: none
+  }
+
+  .actu {
+    margin-top: 2%;
+  }
+
+  .actu h1 {
+    
+    font-size: 50px;
+  }
+
+  .list {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+  }
+  .list img{
+    height: 200px;
+    width: 300px;
+    transition: 0.5s all;
+  }
+  .achète {
+    margin-top: 5%;
+    font-size: 13px;
+    width: 785px;
+    
+  }
+
+  input[type="button"] {
+    font-size: 20px;
+
+  }
+
+  .temps {
+    font-size: 50px;
+    margin-left: 25%;
+    display: none;
+  }
+
+  /* Adjust the height and margin of the video section */
+  .vid {
+    display: none;
+    position: relative;
+   right: 5%;
+    height: 300px;
+    /* margin-left: 5%; */
+    margin-right: 0%;
+  }
+  .best{
+    margin-top: 10%;
+   
+  }
+  .vid img {
+    position: relative;
+    right: 20%;
+    bottom: 5%;
+  }
+
+  .list img:hover{
+    height: 320px;
+    width: 420px;
+  }
+  .up {
+    margin-left: 30%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .up img {
+    height: 200px;
+    width: 330px;
+  }
+
+  footer {
+    padding: 10px;
+    width: 768px;
+  }
+  .footlog{
+      margin-left: 37%;
+  }
+  .infofoot {
+      display: none;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #follow {
+    margin-left: 39%;
+  }
+  .svg {
+    margin-left: 38%;
+  }
+  .trait {
+    margin-left: 0;
+  }
+  .square{
+    display: inline-block;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  #carre{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .class{
+    display:inline-table;
+    margin-top: 5%;
+  }
+  .boule{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 410px;
+  }
+}
+
